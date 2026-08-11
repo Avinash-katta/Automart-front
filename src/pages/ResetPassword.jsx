@@ -88,7 +88,7 @@ const ResetPassword = () => {
                     disabled={!token}
                     value={newPassword}
                     onChange={(e) => setNewPassword(e.target.value)}
-                    className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#0F6FFF] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 text-sm outline-none transition-all disabled:bg-gray-50"
+                    className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#F97316] focus:ring-2 focus:ring-orange-100 rounded-xl px-4 py-3 text-sm outline-none transition-all disabled:bg-gray-50"
                     placeholder="••••••••"
                   />
                 </div>
@@ -104,7 +104,7 @@ const ResetPassword = () => {
                     disabled={!token}
                     value={confirmPassword}
                     onChange={(e) => setConfirmPassword(e.target.value)}
-                    className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#0F6FFF] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 text-sm outline-none transition-all disabled:bg-gray-50"
+                    className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#F97316] focus:ring-2 focus:ring-orange-100 rounded-xl px-4 py-3 text-sm outline-none transition-all disabled:bg-gray-50"
                     placeholder="••••••••"
                   />
                 </div>
@@ -114,7 +114,7 @@ const ResetPassword = () => {
                 <button
                   type="submit"
                   disabled={loading || !token}
-                  className="w-full flex justify-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#0F6FFF] hover:bg-[#0051D4] focus:outline-none transition-all cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed shadow-md shadow-blue-100 transform active:scale-99"
+                  className="w-full flex justify-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#F97316] hover:bg-[#EA580C] focus:outline-none transition-all cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed shadow-md shadow-orange-100 transform active:scale-99"
                 >
                   {loading ? 'Resetting Password...' : 'Reset Password'}
                 </button>
@@ -132,7 +132,7 @@ const ResetPassword = () => {
             </p>
             <Link
               to="/login"
-              className="mt-6 inline-block w-full text-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#0F6FFF] hover:bg-[#0051D4] transition-colors shadow-md shadow-blue-200"
+              className="mt-6 inline-block w-full text-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#F97316] hover:bg-[#EA580C] transition-colors shadow-md shadow-orange-200"
             >
               Sign In
             </Link>

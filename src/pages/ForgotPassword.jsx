@@ -33,7 +33,7 @@ const ForgotPassword = () => {
         {/* Back Link */}
         <div className="text-left">
           <Link to="/login" className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-500 hover:text-black">
-            <ArrowLeft className="w-4 h-4 text-[#0F6FFF]" /> Back to Sign In
+            <ArrowLeft className="w-4 h-4 text-[#F97316]" /> Back to Sign In
           </Link>
         </div>
 
@@ -60,7 +60,7 @@ const ForgotPassword = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#0F6FFF] focus:ring-2 focus:ring-blue-100 rounded-xl px-4 py-3 text-sm outline-none transition-all"
+                  className="w-full bg-white border border-gray-200 hover:border-gray-300 focus:border-[#F97316] focus:ring-2 focus:ring-orange-100 rounded-xl px-4 py-3 text-sm outline-none transition-all"
                   placeholder="name@example.com"
                 />
               </div>
@@ -69,7 +69,7 @@ const ForgotPassword = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full flex justify-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#0F6FFF] hover:bg-[#0051D4] focus:outline-none transition-all cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed shadow-md shadow-blue-100 transform active:scale-99"
+                  className="w-full flex justify-center py-3.5 px-4 rounded-xl text-sm font-semibold text-white bg-[#F97316] hover:bg-[#EA580C] focus:outline-none transition-all cursor-pointer disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed shadow-md shadow-orange-100 transform active:scale-99"
                 >
                   {loading ? 'Sending Link...' : 'Send Reset Link'}
                 </button>
@@ -78,8 +78,8 @@ const ForgotPassword = () => {
           </>
         ) : (
           <div className="text-center py-8">
-            <div className="w-12 h-12 bg-blue-50 border border-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Mail className="w-6 h-6 text-[#0F6FFF]" />
+            <div className="w-12 h-12 bg-orange-50 border border-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Mail className="w-6 h-6 text-[#F97316]" />
             </div>
             <h3 className="text-xl font-bold text-gray-900">Check your email</h3>
             <p className="mt-2 text-sm text-gray-500 font-light">
@@ -87,7 +87,7 @@ const ForgotPassword = () => {
             </p>
             <Link
               to="/login"
-              className="mt-6 inline-block text-sm font-semibold text-[#0F6FFF] hover:underline"
+              className="mt-6 inline-block text-sm font-semibold text-[#F97316] hover:underline"
             >
               Return to Login
             </Link>
